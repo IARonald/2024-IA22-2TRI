@@ -54,9 +54,13 @@ opção "Open folder" e va na areá de trabalho e selecione a pasta que você cr
 
 Achando ela, sublima ela até a ultima chave antes da vírgula, e cole:
 
-			"scripts": {
-  			  "dev": "nodemon src/app.ts"
-			}
+			
+      
+            "scripts": {
+                "test": "echo \"Error: no test specified\" && exit 1",
+                "dev": "npx nodemon src/app.ts"
+      
+      
 
 - até aí tudo bem? se sim, olhe para o canto superior esquerdo de sua tela, você verá uma pasta com o nome "src", clique nela
 
@@ -85,7 +89,7 @@ Achando ela, sublima ela até a ultima chave antes da vírgula, e cole:
 
 ```
 ## "Ligando o seu servidor"
-- Fez isso? Agora cria do Rj, aperte novamente as teclas: "Ctrl" + a tecla de aspas ", faça isso porque vai precisar abrir o terminal , abriu o terminal? eu espero que sim, digite no terminal isso: 
+- Fez isso? Aperte novamente as teclas: "Ctrl" + a tecla de aspas ", faça isso porque vai precisar abrir o terminal , abriu o terminal? eu espero que sim, digite no terminal isso: 
 					
 					- npm run dev
 
@@ -98,6 +102,8 @@ na url da guia:
 		- http://localhost:3333
 
 - se tudo ocorrer bem, vaí aparecer um "hello world" na sua tela no canto esquerdo, até colocaria uma imagem, mas confio em você, vai saber quando ver...
+
+- Depois de ver esse "hello world", vá até o terminal com `Ctrl + "` e dê um `Ctrl + c` e aperte "S" , em seguida aperte enter para confirmar
 
 ## Fase 2
 
@@ -244,14 +250,14 @@ content-type: application/json
 DELETE http://localhost:1111/users/1 HTTP/1.1'
 ```
 
-- Fazendo isso você está dizendo para o servidor adcionar um cara no seu banco de dados, aí ele fala o nome John doe e o email desse cara
-- o Post é um método para adcionar pessoas no seu servidor, Put é para editar e Delete... bem, acrediito que não preciso dizer kkkk
+- Fazendo isso você está dizendo para o servidor adicionar um cara no seu banco de dados, aí ele fala o nome John doe e o email desse cara
+- o Post é um método para adcionar pessoas no seu servidor, Put é para editar e Delete... bem, acredito que não preciso dizer kkkk
 
-- Antes de testar isso "mate" seu servidor com Ctrl + c, abra novamente com esse comando:
+- Antes de testar isso "mate" seu servidor com `Ctrl + c`, inicialize o servidor novamente com esse comando:
 
       npm run dev
 
-- Para saber se está funcionando a inserção, edição e o apagar, aperte umas palavras que vai aparecer acima de POST, PUT E DELETE,  colocando o mouse acima deles vai aparecer uma pequena mensagem "Send request", clique nele.
+- Para saber se está funcionando a inserção, edição e o apagar, aperte nas palavras que vai aparecer acima de POST, PUT E DELETE,  colocando o mouse acima deles vai aparecer uma pequena mensagem "Send request", clique nela, na sêquencia POST, aí vá no link e olhe lá no navegador, depois PUT... olhe novamente e por fim o DELETE.
 
 - Para observar se funcionou vá no seu navegador e coloque na url esse link:
 
@@ -260,9 +266,6 @@ DELETE http://localhost:1111/users/1 HTTP/1.1'
 
 - Daí vai aparecer o nome, id e email do "cliente", Quando for apertar o "send request", comece pelo 'POST', cheque nesse link aí, e teste o 'PUT' e por final o 'DELETE'
 
-- Vai aparecer isso: 
-
-<img src = "img/ " width =>
 
 - Após apertar o send requeste acima do 'PUT' observe nesse link com final barra users, acesse ele e procure o cliente com id = 1, se o nome dele mudou de Jhon doe para Jhon update, funcionou, e se fizer isso no 'DELETE', e voltar nessa guia do users e o cliente 1 tiver sido apagado... funcionou
 
@@ -275,7 +278,7 @@ DELETE http://localhost:1111/users/1 HTTP/1.1'
       public
 
   
-## Adcinando o script no public
+## Adicinando o script no public
 
 aperte no public e clique no ícone de arquivo com ´+´ , nomeie esse arquivo dentro do public de:
 
@@ -370,4 +373,4 @@ aperte no public e clique no ícone de arquivo com ´+´ , nomeie esse arquivo d
 
 ## Finalmente familia
 
-- acesse essa url:` http://localhost:1111/` e teste o adcionar clientes, editar e deletar... fim
+- acesse essa url:` http://localhost:1111/` e teste o adicionar clientes, editar e deletar... fim e parabéns 
